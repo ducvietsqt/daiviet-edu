@@ -1,6 +1,7 @@
 #page {
   overflow-x: hidden;
 }
+
 ._disabled {
   //pointer-events: none;
   cursor: not-allowed;
@@ -8,6 +9,19 @@
   * {
     pointer-events: none !important;
   }
+}
+
+.breadcrumb-item {
+  a {
+    color: #505050;
+  }
+  &.active {
+    color: #eb891a;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
 }
 
 * {
@@ -21,12 +35,114 @@
 
   }
 }
+
 .section {
-  text-align:center;
+  text-align: center;
   font-size: 3em;
   background: none !important;
 }
 
 #page {
+
+}
+
+.top_nav {
+  background: #282828;
+}
+
+._link_foo {
+  color: #063662;
+}
+
+.banner_img {
+  //border: solid 1px red;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.img {
+  img {
+    max-width: none;
+  }
+}
+
+.content {
+  margin-top: -50px;
+  margin-bottom: 60px;
+}
+
+.menu_nav {
+  //border: solid 1px red;
+  margin-bottom: 40px;
+  .nav-item {
+    //border: solid 1px red;
+
+    .nav-link {
+      color: #006a39;
+      font-weight: bold;
+      padding-bottom: 0px;
+      padding-top: 0px;
+    }
+    &.active, &:hover {
+      .nav-link {
+        color: #005399;
+      }
+    }
+  }
+}
+.menu_nav_sub {
+  * {
+    transition: all 0.25s linear;
+  }
+  .nav-item {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    .nav-link {
+      background: #eb891a;
+      color: #ffffff;
+      border: solid 1px #eb891a;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      &:hover {
+        background: #ffffff;
+        color: #eb891a;
+        border-color: #eb891a;
+      }
+    }
+  }
+}
+.form_search {
+  position: relative;
+  border: solid 1px #03559a;
+  border-radius: 19px;
+  overflow: hidden;
+  background: #fff;
+  width: 210px;
+  button {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: none;
+    border: none;
+  }
+  input {
+    color: #03559a;
+    background: transparent;
+    margin: 0px;
+    padding-right: 42px;
+    border: none;
+    &:focus {
+      background: transparent;
+    }
+  }
+  input::placeholder {
+    color: #03559a;
+    border-radius: 19px;
+
+  }
 
 }
