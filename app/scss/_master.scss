@@ -1,0 +1,32 @@
+#page {
+  overflow-x: hidden;
+}
+._disabled {
+  //pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.5;
+  * {
+    pointer-events: none !important;
+  }
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  &:hover, &:focus, &:active {
+    outline: none;
+    //border: none;
+    box-shadow: none !important;
+
+  }
+}
+.section {
+  text-align:center;
+  font-size: 3em;
+  background: none !important;
+}
+
+#page {
+
+}
