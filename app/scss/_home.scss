@@ -1,0 +1,121 @@
+.list_post {
+  .pic_thumb {
+    //border: solid 1px red;
+    position: relative;
+    padding-top: 56.25%;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    .img--box {
+      //border: solid 1px blue;
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  ._title {
+    color: #000;
+    position: relative;
+    z-index: 9;
+    font-size: 16px;
+    a {
+      color: #000;
+      font-size: 16px;
+    }
+  }
+  ._date {
+    color: #888888;
+  }
+  ._drs {
+
+  }
+}
+
+.list-group--other {
+  .list-group-item {
+    position: relative;
+    border: none;
+    color: #5b5b5b;
+    display: block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 1rem;
+    background: transparent;
+    &:hover {
+      color: #eb891a;
+    }
+    &:before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #eb891a;
+      border-radius: 100%;
+    }
+  }
+}
+
+.bg-gray {
+  background: #f3f3f3;
+}
+
+.title_page {
+  color: #ffffff;
+  font-size: 22px;
+}
+.color-gray {
+  color: #505050;
+}
+.list-group--menu {
+  .list-group-item {
+    border-radius: 0px;
+    border: none;
+    border-bottom: solid 1px #ffffff !important;
+    background: #8a510f;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 0px;
+    padding-left: 2rem;
+    &:hover, &.active {
+      background: #eb891a;
+    }
+    &:first-child {
+      background: #eb891a;
+      padding-left: 1rem;
+    }
+  }
+}
+.box-orange {
+  border: solid 1px #eb891a;
+  padding: 2rem 1rem;
+}
+.list-img-view {
+  ._item {
+    //border: solid 1px red;
+    padding: 10px;
+  }
+}
+.box-green {
+  border: solid 1px;
+  border-color: #006a39;
+}
+.read_more {
+  font-size: 16px;
+  
+}
+.color-orange {
+  color: #eb891a;
+}
+
