@@ -128,6 +128,27 @@
 
 // banner
 .carousel_page {
+  .carousel-indicators {
+    //border: solid 1px red;
+    width: 25%;
+    right: 0px;
+    left: auto;
+    background: transparent;
+
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: solid 3px #e2d3c3;
+      &.active {
+        background: #eb891a;
+        border-color: #eb891a;
+      }
+      &:before {
+        //background: #8a510f;
+      }
+    }
+  }
   .carousel-caption {
     //border: solid 1px red;
     background: #8a510f;
@@ -270,6 +291,121 @@
       background: #ffffff;
       color: #eb891a;
       border-color: #eb891a;
+    }
+  }
+}
+
+.new_highlight {
+  background: #eb891a;
+  .title_dl1 {
+    font-size: 20px;
+    color: #006a39;
+    background: #ffffff;
+    margin: -1rem !important;
+    margin-bottom: 1rem !important;
+
+  }
+  .drs {
+    color: #ffffff;
+    font-size: 14px;
+  }
+  .read_more {
+    color: #ffffff;
+    margin-top: 1rem;
+    font-size: 12px;
+  }
+  ._thumb {
+    //border: solid 1px red;
+    position: relative;
+    padding-top: 56.25%;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+  }
+  .title_dl2 {
+    //border: solid 1px red;
+    font-size: 14px;
+    margin-top: 1rem;
+    a {
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }
+}
+
+.m-n4 {
+  margin: -1rem !important;
+}
+.mb-n4 {
+  margin-bottom: -1rem;
+}
+.mx-n4 {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
+
+.content_new_home {
+
+  .breadcrumb-link {
+    //border: solid 1px red;
+    .item {
+      a {
+        display: block;
+        text-transform: uppercase;
+        color: #505050;
+      }
+      &.active {
+        a {
+          color: #eb891a;
+        }
+      }
+    }
+  }
+  .new_highlight {
+    background: none;
+    .pic_thumb {
+      img {
+        
+      }
+    }
+    ._title {
+      a {
+        display: block;
+        color: #86a995;
+        font-size: 16px;
+      }
+    }
+  }
+  .other_new_highlight {
+    //border: solid 1px yellow;
+    .list-unstyled {
+      .media {
+        background: #ffffff;
+        >* {
+          width: 100px;
+          //border: solid 1px red;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .media-body {
+        padding-top: 10px;
+        h5 {
+
+          a {
+            font-size: 16px;
+            display: block;
+            color: #868485;
+          }
+        }
+      }
     }
   }
 }
