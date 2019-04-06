@@ -409,3 +409,15 @@
     }
   }
 }
+.list_post--title {
+  //border: solid 1px red;
+  ._title {
+    background: #eb891a;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+    a {
+      color: #ffffff;
+    }
+  }
+}
