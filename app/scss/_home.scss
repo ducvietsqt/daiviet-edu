@@ -421,3 +421,26 @@
     }
   }
 }
+.d-inline--caption {
+  img {
+    display: block;
+    float: left;
+    padding: 0px 15px 15px 0px;
+  }
+}
+.group_link_school {
+  &._inline {
+    //display: flex;
+    //flex-wrap: wrap;
+    .btn {
+      //width: 50%;
+      //display: block;
+      white-space: nowrap;
+      margin-bottom: 15px;
+    }
+  }
+}
+.read_more_icon {
+  text-align: center;
+  color: #eb891a;
+}
