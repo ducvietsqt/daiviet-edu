@@ -459,7 +459,7 @@
   .item {
     //border: solid 1px red;
     .pic_thumb {
-        width: 175px;
+      width: 175px;
     }
     .name {
       color: #eb891a;
@@ -488,21 +488,22 @@
     }
   }
 }
+
 .title_structure {
   color: #005399;
 }
 
 .list-detail {
-    .title_p {
-      color: #eda15e;
-      font-size: 20px;
-      margin-bottom: 1rem;
-    }
-    .caption_intro {
-      color: #505050;
-      font-size: 14px;
-      margin-bottom: 1rem;
-    }
+  .title_p {
+    color: #eda15e;
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .caption_intro {
+    color: #505050;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
   ol {
     //border: solid 1px red;
     padding: 0px 0px 0px 20px;
@@ -514,6 +515,7 @@
     }
   }
 }
+
 .image_list {
   //border: solid 1px red;
   display: flex;
@@ -531,4 +533,7 @@
     }
   }
 }
+
+
+
 
