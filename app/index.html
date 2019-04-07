@@ -10,6 +10,7 @@
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/animate.css" rel="stylesheet">
     <!--build:css css/main.css-->
     <link href="css/main.css" rel="stylesheet">
     <!--endbuild-->
@@ -361,8 +362,8 @@
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
+                <div class="carousel-inner wow fadeIn">
+                    <div class="carousel-item wow slideInLeft active">
                         <img src="images/banner_home.jpg" class="d-block w-100" alt="...">
                         <div class="carousel-caption p-4">
                             <h4 class="_title pb-4">
@@ -424,7 +425,7 @@
         <div class="container">
             <div class="group_menu my-4">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown">
                         <div class="group_menu--item">
                             <h5 class="card-title">
                                 <img src="images/menu1.png" alt=""> Sinh viên tương lai
@@ -435,7 +436,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown">
                         <div class="group_menu--item">
                             <h5 class="card-title">
                                 <img src="images/menu2.png" alt="">Sinh viên hiện tại
@@ -446,7 +447,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown">
                         <div class="group_menu--item">
                             <h5 class="card-title"><img src="images/menu3.png" alt="">Nhân viên</h5>
                             <div class="list-group">
@@ -455,7 +456,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="col-xs-12 col-sm-6 col-md-3 wow fadeInDown">
                         <div class="group_menu--item">
                             <h5 class="card-title"><img src="images/menu4.png" alt="">Giới thiệu</h5>
                             <div class="list-group">
@@ -471,8 +472,8 @@
                 <div class="_info_highlight">
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
-                            <div class="box-orange p-0">
-                                <div class="row gray m-0">
+                            <div class="box-orange p-0 overflow-x-hidden">
+                                <div class="row gray m-0 wow fadeInLeft">
                                     <div class="item  order-md-1 col-sm-12 col-md-6 p-0 pl-md-3 pt-md-3 pb-md-3 pr-md-2">
                                         <div class="_drs_thumbnail gray">
                                             <h6 class="title mb-2">
@@ -515,11 +516,20 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
-                            <div class="group_link_school">
-                                <a class="text-uppercase btn" href="#">THÔNG BÁO TUYỂN SINH 2019</a>
-                                <a class="text-uppercase btn" href="#">PHƯƠNG THỨC TUYỂN SINH 2019</a>
-                                <a class="text-uppercase btn" href="#">THÔNG TIN VIỆC LÀM - THỰC TẬP</a>
-                                <a class="text-uppercase btn" href="#">TỔNG ĐÀI TƯ VẤN 1900 1900</a>
+                            <div class="group_link_school overflow-x-hidden">
+                                <a class="text-uppercase btn wow bounceInRight"
+                                   data-wow-duration="0.5s"
+                                   href="#">THÔNG BÁO TUYỂN SINH 2019</a>
+                                <a class="text-uppercase btn wow bounceInRight"
+                                   data-wow-duration="0.5s"
+                                   data-wow-delay="0.5s"
+                                   href="#">PHƯƠNG THỨC TUYỂN SINH 2019</a>
+                                <a class="text-uppercase btn wow bounceInRight"
+                                   data-wow-duration="0.5s"
+                                   data-wow-delay="1s" href="#">THÔNG TIN VIỆC LÀM - THỰC TẬP</a>
+                                <a class="text-uppercase btn wow bounceInRight"
+                                   data-wow-duration="0.5s"
+                                   data-wow-delay="1.5s" href="#">TỔNG ĐÀI TƯ VẤN 1900 1900</a>
                             </div>
                         </div>
                     </div>
@@ -677,38 +687,88 @@
                                 <h2 class="title_page color-gray text-uppercase mb-4 text-center">
                                     hình ảnh
                                 </h2>
-                                <div class="list-img-view d-flex flex-wrap row">
-                                    <div class="_item col-4">
-                                        <img src="images/post1.jpg" alt="">
+                                <div id="carouselExampleControls" class="carousel carousel_gallery slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="list-img-view d-flex flex-wrap row">
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="list-img-view d-flex flex-wrap row">
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post1.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post2.jpg" alt="">
+                                                </div>
+                                                <div class="_item col-4">
+                                                    <img src="images/post3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post2.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post3.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post1.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post2.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post3.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post1.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post2.jpg" alt="">
-                                    </div>
-                                    <div class="_item col-4">
-                                        <img src="images/post3.jpg" alt="">
-                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 </div>
-                                <a href="#" class="d-block text-uppercase read_more font-italic text-right mt-3">xem tất
-                                    cả</a>
 
+                                <a href="#" class="d-block text-uppercase read_more font-italic text-right mt-3">
+                                    xem tất cả
+                                </a>
                                 <div class="mt-3">
                                     <div class="fb-page"
                                          data-href="https://www.facebook.com/truongcaodangdaivietsaigon/"
@@ -768,6 +828,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <!--build:js js/start.js -->
 <script src="js/start.js"></script>
 <!-- endbuild -->
