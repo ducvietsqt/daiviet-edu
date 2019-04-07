@@ -286,4 +286,28 @@
     margin-left: -10px;
   }
 }
+.carousel_gallery {
+  .carousel-indicators {
+    //border: solid 1px red;
+    width: 100%;
+    right: 0px;
+    left: auto;
+    background: transparent;
+    bottom: -10px;
+    margin: 0px;
 
+    li {
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      border: solid 3px #e2d3c3;
+      &.active {
+        background: #eb891a;
+        border-color: #eb891a;
+      }
+      &:before {
+        //background: #8a510f;
+      }
+    }
+  }
+}
